@@ -1,0 +1,164 @@
+body {
+
+	background: url(https://media-mediatemple.netdna-ssl.com/wp-content/themes/smashing-magazine/assets/images/smbg.png);
+}
+
+#grid {
+	margin-top: 10px;
+}
+.menu{
+	width: 10%;
+	float: left;
+	height: 200px;
+
+}
+
+#container {
+    min-height: 1000px;
+	max-width: 90%;
+	float: right;
+	margin: 0 auto;
+    margin-bottom: 40px;
+	
+}
+.main-area {
+   
+	float: left;
+	width: 70%;
+	background: white;
+	margin: 0 auto;
+}
+.second-menu {
+	float: left;
+	width: 20%;
+}
+.context {
+	float: right;
+	width: 50%;
+	margin: 30px 140px 0;
+
+	/*typography*/
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	}
+
+.sidebar{
+	float: right;
+	width: 30%;
+    margin: 20px 0 20px 0;
+}
+
+
+
+/*end of positioning elements*/
+
+/*making elements appear as blocks/columns*/
+.menu li {
+color: transparent;
+height: 50px;
+width: 100%;
+background: #d3d3d3;
+border-bottom: 1px solid grey;
+}
+
+.second-menu li {
+color: transparent;
+height: 30px;
+width: 100%;
+background: #b0b0b0;
+border-bottom: 1px solid grey;
+}
+
+.second-menu ul {
+	margin: 10px 0 10px 0;
+	border-left: 5px solid black;
+}
+ 
+.search-bar{
+width: 80%;
+height: 40px;
+margin: 50px 0px 10px 15px;
+border: 1px solid #d3d3d3;
+background: grey;
+ }
+
+.side-block{
+margin: 20px 20px 20px 0px;
+background: #c4c4c4;
+min-height: 100px;
+color: transparent;
+}
+
+.two-sections li {
+
+	height: 150px;
+}
+.two-sections li:last-child {
+	border-top: 1px solid grey;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.blocks
+{
+	width: 20%;
+	height: 110px;
+	background: grey;
+	display: inline-block;
+	margin: 15px 20px 0 20px;	
+}
+.related-articles div:first-child {
+margin-left: 15%;
+}
+.related-articles {
+		
+	width: 63%;
+	height: 150px;
+	margin-left: 10%;
+}
+
+.more-info {
+	background: #dedede;
+	width: 60%;
+	height: 30px;
+	margin: 0 0 0 20px;
+}
+
+
+/*clear fix method*/
+.group:before, 
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {zoom:1;}
+/*end of clear fix method*/
+
+/*Sticky Footer Great fix :D */
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+#grid {
+	min-height: 100%;
+	position: relative;
+}
+header {
+	padding: 10px;
+}
+#container {
+	padding-bottom: 200px; /*height of the footer*/
+}
+
+footer {
+	width:63%;
+	height:200px;
+	position:absolute;
+	bottom:0;
+	left: 10%;
+}
+
